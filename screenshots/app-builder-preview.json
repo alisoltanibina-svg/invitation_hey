@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "جشن پیوند اسراء و محمدصادق",
+      "hasCanvas": false,
+      "bodyTextLen": 59,
+      "bodyTextHash": "76ae38d3c1e829ca8909f268c6df28c01c98048a6ed3a6a3b1ca9186540d5cf8",
+      "bodyTextPrefix": "با افتخار به جشن پیوند ما دعوتید ۲۳ شهریورماه ۱۴۰۵ باز کنید",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "جشن پیوند اسراء و محمدصادق",
+      "hasCanvas": false,
+      "bodyTextLen": 59,
+      "bodyTextHash": "76ae38d3c1e829ca8909f268c6df28c01c98048a6ed3a6a3b1ca9186540d5cf8",
+      "bodyTextPrefix": "با افتخار به جشن پیوند ما دعوتید ۲۳ شهریورماه ۱۴۰۵ باز کنید",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
