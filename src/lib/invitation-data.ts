@@ -19,7 +19,7 @@ export const invitation = {
   rsvpTitle: "دعوتینیزا جواب",
   rsvpLead: "عزیز ............!",
   rsvpHint: "زحمت اولماسا، گله‌جگینیزی بیزه بیلدیرین.",
-  rsvpEmail: "sadegh.sd.1172@gmail.com",
+  rsvpEmail: "fatemehheydarikiya1997@gmail.com",
   locationTitle: "مراسمین آدرسی",
   locationKicker: "گؤروش یئریمیز",
   venueName: "باغ تالار رویال",

@@ -22,6 +22,7 @@
 import { spawn } from "node:child_process";
 import { readFileSync, realpathSync } from "node:fs";
 import { constants as osConstants } from "node:os";
+import { createRequire } from "node:module";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -111,7 +112,16 @@ function main(argv) {
     process.exit(2);
   }
   const env = mergeAppEnv(readAppEnv(projectRoot()), process.env);
-  const child = spawn(command, args, { stdio: "inherit", env });
+  // Execute Vite with Node so Windows does not need to spawn a .cmd shim.
+  const require = createRequire(import.meta.url);
+  const child =
+    command === "vite"
+      ? spawn(
+          process.execPath,
+          [join(dirname(require.resolve("vite/package.json")), "bin/vite.js"), ...args],
+          { stdio: "inherit", env },
+        )
+      : spawn(command, args, { stdio: "inherit", env });
   // The dev server is long-running and is stopped by signalling this wrapper.
   for (const signal of ["SIGINT", "SIGTERM", "SIGHUP"]) {
     process.on(signal, () => child.kill(signal));
